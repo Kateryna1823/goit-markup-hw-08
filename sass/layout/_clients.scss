@@ -1,7 +1,11 @@
 .company-list {
   display: flex;
   flex-wrap: wrap;
+
   justify-content: space-between;
+}
+.company-list__item {
+  width: calc(100% / 2 - 15px);
 }
 .company__link {
   display: flex;

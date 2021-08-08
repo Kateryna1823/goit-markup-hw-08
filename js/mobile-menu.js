@@ -11,6 +11,5 @@
   function toggleModal() {
     refs.menu.classList.toggle("is-open");
   }
-  let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 })();
