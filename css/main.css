@@ -775,10 +775,6 @@ body {
   justify-content: space-between;
 }
 
-.company-list__item {
-  width: calc(100% / 2 - 15px);
-}
-
 .company__link {
   display: flex;
   align-items: center;
