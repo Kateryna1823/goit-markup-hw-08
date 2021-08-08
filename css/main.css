@@ -367,6 +367,10 @@ body {
   margin-bottom: 64px;
 }
 
+.mobile-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 .mobile-contacts__link-tel {
   display: block;
   font-style: normal;
