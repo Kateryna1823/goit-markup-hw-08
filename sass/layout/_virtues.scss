@@ -1,33 +1,65 @@
 .virtues-list {
-  display: flex;
-  justify-content: space-between;
+  display: block;
 }
-
 .virtues__icon {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
   background-color: #f5f4fa;
-  width: 270px;
   height: 120px;
   padding-top: 25px;
   padding-right: 100px;
   padding-bottom: 25px;
   padding-left: 100px;
   margin-bottom: 30px;
+  line-height: 0;
 }
-.virtues__item {
-  width: 270px;
+@media screen and (max-width: 1199px) {
+  .virtues__item:nth-child(-n + 3) {
+    margin-bottom: 30px;
+  }
 }
 .virtues__caption {
   margin-bottom: 10px;
-  font-weight: 700;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #212121;
 }
 .virtues__slogan {
+  width: 100%;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 768px) {
+  .virtues-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .virtues__item {
+    flex-basis: 354px;
+  }
+  .virtues__caption {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .virtues-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .virtues__item {
+    width: 270px;
+    flex-basis: auto;
+  }
 }

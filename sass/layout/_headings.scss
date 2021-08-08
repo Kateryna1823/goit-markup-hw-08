@@ -1,11 +1,25 @@
 .direction-heading,
-.team-section-heading,
-.company-section-heading {
+.team-heading,
+.company-heading {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+}
+.secton__heading {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .direction-heading,
+  .team-heading,
+  .company-heading {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+  .secton__heading {
+    margin-bottom: 50px;
+  }
 }

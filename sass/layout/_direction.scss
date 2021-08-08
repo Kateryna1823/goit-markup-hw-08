@@ -1,13 +1,23 @@
+.direction {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .direction {
+    display: flex;
+  }
+}
+
 .exception {
   padding-top: 0;
+  padding-bottom: 0;
+  border: 1px solid fuchsia;
 }
 .direction-list {
   flex-basis: calc((100% - 90px) / 3);
   display: flex;
   justify-content: space-between;
-  padding-bottom: 94px;
 }
-.direction-working {
+.direction__working {
   position: absolute;
   font-weight: 700;
   font-size: 14px;
@@ -23,6 +33,6 @@
   padding-bottom: 27px;
   width: 100%;
 }
-.direction-item {
+.direction__item {
   position: relative;
 }

@@ -1,0 +1,128 @@
+.mobile-menu {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+.mobile-menu__container {
+  position: relative;
+  padding-top: 48px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 48px;
+}
+
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+}
+
+.mobile-menu__close-icon {
+  width: 40px;
+  height: 40px;
+  fill: #212121;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .mobile-menu__close-btn:focus & {
+    fill: var(--accent-color);
+  }
+  &:hover {
+    fill: var(--accent-color);
+  }
+}
+
+.mobile-nav {
+  margin-bottom: 302px;
+}
+.mobile-nav__item-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.mobile-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mobile-social {
+  display: flex;
+  align-items: center;
+}
+.mobile-contacts {
+  margin-bottom: 64px;
+}
+// .mobile-contacts__item:not(:last-child) {
+//   margin-bottom: 32px;
+// }
+.mobile-contacts__link-tel {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.mobile-contacts__link-mail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.mobile-sotial__link-slash::before {
+  content: "";
+  width: 22px;
+  height: 0px;
+  left: 135px;
+
+  margin-right: 10px;
+  top: 726px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+.mobile-sotial__link {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.mobile-sotial__item:not(:last-child) {
+  position: relative;
+  margin-right: 10px;
+}
+.mobile-menu {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu__container {
+    max-width: 480px;
+    max-height: 796px;
+  }
+}

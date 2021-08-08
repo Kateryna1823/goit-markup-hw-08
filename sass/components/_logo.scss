@@ -1,29 +1,39 @@
 .logo {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #000000;
 }
-.header__logo {
-  margin-right: 72px;
-}
-
 .logo_color {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-.the-logo__container {
-  margin-bottom: 20px;
-  padding-top: 60px;
+.footer_logo {
+  color: #ffffff;
 }
 
-.footer_logo {
-  margin-right: 0px;
-  color: #ffffff;
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .logo_color {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .header__logo {
+    margin-right: 93px;
+    padding-left: 215px;
+  }
 }
