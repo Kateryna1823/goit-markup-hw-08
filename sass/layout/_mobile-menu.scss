@@ -4,10 +4,15 @@
   left: 0;
   top: 0;
   width: 100vw;
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
+  // position: fixed;
+  // top: 0;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
 }
 .mobile-menu__container {
   position: relative;
@@ -66,9 +71,7 @@
 .mobile-contacts {
   margin-bottom: 64px;
 }
-// .mobile-contacts__item:not(:last-child) {
-//   margin-bottom: 32px;
-// }
+
 .mobile-contacts__link-tel {
   display: block;
   font-style: normal;
@@ -123,6 +126,5 @@
 @media screen and (min-width: 480px) {
   .mobile-menu__container {
     max-width: 480px;
-    max-height: 796px;
   }
 }
